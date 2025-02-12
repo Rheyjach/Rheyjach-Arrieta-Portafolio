@@ -1,0 +1,150 @@
+/*Elementos generales*/
+h1 {
+    font-family: "Rubik Dirt", serif;
+    font-size: 28px;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/*Clases BootStrap*/
+.navbar {
+    background-color: #f5f6f7;
+    padding: 2rem;
+}
+
+.navbar-collapse {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    margin: auto;
+    padding: 35px;
+
+}
+.form-check{
+    position: absolute;
+    margin-left: 40px;
+    display: flex;
+    gap: 2px;
+}
+
+/*Clases Personalisadas*/
+.seccion-oscura {
+    background-color: #808080;
+}
+.sobre-mi{
+    max-width: 700px;
+}
+.proyecto-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.proyecto{
+    position: relative;
+    margin-bottom: 10px;
+}
+.proyecto img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out
+}
+.overlay{
+    text-align: center;
+}
+.proyecto p{
+    margin-bottom: 0;
+}
+.iconos-contenedor i{
+    color: black;
+    font-size: 30px;
+}
+.texto-contenedor{
+    font-weight: normal;
+    text-align: justify;
+    font-size: 14px;
+}
+/* IDs de imagenes de proyectos*/
+.proyecto:hover #imagenEarthVision{
+    content: url("EarthVision.gif");
+}
+.proyecto:hover #imagenClimaExpress{
+    content: url("ClimaExpress.gif");
+}
+.proyecto:hover #imagenfinanzApp{
+    content: url("finanzApp.gif");
+}
+.proyecto:hover #imagenInventarioPro{
+    content: url("InventarioPro.gif");
+}
+.proyecto:hover #imagenLockSafe{
+    content: url("LockSafe.gif");
+}
+.proyecto:hover #imagenDataAnalysis{
+    content: url("RetailDataAnalytics.gif");
+}
+
+/*ID Checkbox*/
+.form-check #botonIdioma{
+    background-color: #808080;
+}
+.form-check #botonIdioma:checked{
+    border-color: white;
+}
+
+/*Pie de pagina*/
+.pie-pagina{
+    padding: 20px;
+}
+.iconos-redes{
+    padding: 5px;
+}
+.iconos-redes  i{
+    font-size: 30px;
+    
+    color: white;
+}
+.iconos-redes a{
+    display: inline-block;
+    border: solid white;
+    border-radius: 40%;
+    padding: 5px;
+}
+.iconos-redes a:hover{
+    background-color: black;
+}
+.iconos-redes a:hover i{
+    color: #808080;
+}
+.derechos-autor{
+    padding: 0;
+    font-size: 12px;
+}
+
+/* Adaptable - Responsivo*/
+@media screen and (max-width:991px) {
+    .navbar-brand {
+        display: none;
+    }
+    .form-check{
+        position: relative;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+}
