@@ -41,6 +41,9 @@ p {
     display: flex;
     gap: 2px;
 }
+.col-12{
+    margin-bottom: 35px;
+}
 
 /*Clases Personalisadas*/
 .seccion-oscura {
